@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Container, Stack } from "@mui/material";
+import Header from "./Components/Header";
+import Body from "./Components/Body";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container maxWidth="xl" sx={{ height: "100vh", padding: "20px" }}>
+        <Stack>
+          <Header />
+        </Stack>
+        <Stack>
+          <Body />
+        </Stack>
+      
+      </Container>
+    </>
   );
 }
 
